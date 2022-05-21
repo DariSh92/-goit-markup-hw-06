@@ -489,7 +489,7 @@
                 <p class="modal-header">Оставьте свои данные, мы вам перезвоним</p>
                         <div class="inputs">
                             <label for="name" class="form-label">Имя</label>
-                                <input type="name" name="name" id="name">
+                                <input type="name" name="name" id="name" class="input-form">
                                     <svg class="input-icon" width="18" height="18">
                                         <use href="./images/icon6.svg#icon-person-black"></use>
                                     </svg>
@@ -497,7 +497,7 @@
 
                         <div class="inputs">
                             <label for="tel"class="form-label">Телефон</label>
-                                <input type="tel" name="tel" id="tel">
+                                <input type="tel" name="tel" id="tel" class="input-form">
                                     <svg class="input-icon" width="18" height="18">
                                         <use href="./images/icon6.svg#icon-phone-black"></use>
                                     </svg>
@@ -505,7 +505,7 @@
 
                         <div class="inputs">
                             <label for="email"class="form-label">Почта</label>
-                                <input type="email" name="email" id="email">
+                                <input type="email" name="email" id="email" class="input-form">
                                     <svg class="input-icon" width="18" height="18">
                                         <use href="./images/icon6.svg#icon-email-black"></use>
                                     </svg>
@@ -516,29 +516,23 @@
                                 <textarea name="comment" id="comment" class="textarea-comment" placeholder="Введите текст" ></textarea>
 
                         </div>  
-                        <div class="agreement"> 
-                                <input type="checkbox" name="deal" id="deal">
-                             <label for="deal">Соглашаюсь с рассылкой и принимаю Условия договора</label>
-                        </div>
 
-                            <button type="submit" class="button-modal">Отправить</button>
+                        <div class="agreement"> 
+                                <input type="checkbox" name="deal" id="deal" class="checkbox">
+                                    <span class="checkbox-icon"></span>
+                                            
+                                <label class="agree-text" for="deal">Соглашаюсь с рассылкой и принимаю <a href="" class="deal">Условия договора</a></label>
+                        </div>
+             <button type="submit" class="button-modal">Отправить</button>
             </form>
             
-
-
-
-
-
-
-
-
             <button type="button" class="modal-exit" data-modal-close>
                 <svg width="30" height="30">
                     <use href="./images/icon2.svg#icon-close"></use>
                 </svg>
             </button>
         </div>
-        </div>
+    </div>
   
     <script src="./js/modal.js"></script>
     </body>
