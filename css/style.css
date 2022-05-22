@@ -322,8 +322,10 @@ body {
   right: 8px;
   padding: 0;
   border: none;
+  /* fill: currentColor; */
   background-color: var(--primary-white-color);
   cursor: pointer;
+  transition: var(--duration) var(--time-function);
 }
 
 .modal-exit:hover,
@@ -1096,14 +1098,16 @@ body {
 }
 
 .checkbox {
-  position: absolute;
-  width: 1px;
+  opacity: 0;
+  z-index: 9;
+  width: 16px;
+  height: 15px;
+  /* width: 1px;
   height: 1px;
   margin: -1px;
   padding: 0;
-  clip: rect(0 0 0 0);
+  clip: rect(0 0 0 0); */
   overflow: hidden;
-  /* appearance: none; */
   position: absolute;
 }
 
@@ -1130,6 +1134,8 @@ body {
   transition: var(--duration) var(--time-function);
   /* background-position: center;
   background-repeat: no-repeat; */
+  z-index: 0;
+  position: relative;
 }
 
 .deal {
