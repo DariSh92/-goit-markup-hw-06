@@ -1115,6 +1115,11 @@ body {
   background-size: contain;
 }
 
+.checkbox:hover + .checkbox-icon,
+.checkbox:focus + .checkbox-icon {
+  border-color: var(--accent-color);
+}
+
 .checkbox-icon {
   display: inline-block;
   width: 16px;
